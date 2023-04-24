@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "homepage": "https://github.com/arjunghimire/package-boilerplate",
   "description": "React component for advanced search",
-  "main": "./dist/index.js",
-  "module": "./dist/index.es.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
   "author": {
     "name": "Arjun Ghimire",
     "email": "arjunghimire0714@gmail.com",
@@ -16,7 +19,8 @@
     "url": "https://github.com/arjunghimire/package-boilerplate"
   },
   "dependencies": {
-    "prop-types": "^15.8.1"
+    "prop-types": "^15.8.1",
+    "rollup-plugin-dts": "^5.3.0"
   },
   "peerDependencies": {
     "react": "^18.1.0",
@@ -26,29 +30,31 @@
     "access": "public"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.2",
-    "@rollup/plugin-commonjs": "^22.0.0",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@testing-library/react": "^13.3.0",
-    "@types/node": "^17.0.36",
-    "@types/react": "^18.0.9",
+    "@babel/core": "^7.21.4",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@testing-library/react": "^14.0.0",
+    "@types/node": "^18.16.0",
+    "@types/react": "^18.0.38",
     "@types/testing-library__react": "^10.2.0",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
-    "babel-loader": "^8.2.5",
-    "eslint": "^8.16.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.30.0",
-    "fork-ts-checker-webpack-plugin": "^7.2.11",
-    "node-sass": "^7.0.1",
-    "prettier": "^2.6.2",
-    "rollup": "^2.75.3",
+    "@typescript-eslint/eslint-plugin": "^5.59.0",
+    "@typescript-eslint/parser": "^5.59.0",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "postcss": "^8.4.23",
+    "prettier": "^2.8.8",
+    "rollup": "^3.21.0",
+    "rollup-plugin-cleaner": "^1.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-typescript2": "^0.31.2",
-    "ts-loader": "^9.3.0",
-    "typescript": "^4.7.2"
+    "rollup-plugin-typescript2": "^0.34.1",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4"
   },
   "scripts": {
     "build": "rollup -c --watch",

@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sources":["../src/MainComponent.tsx"],"sourcesContent":["import React from \"react\";\n\nexport default function MainComponent() {\n  return <div>Main Component</div>;\n}\n"],"names":["React"],"mappings":";;;;;;;;;;AAEc,SAAU,aAAa,GAAA;AACnC,IAAA,OAAOA,sEAAyB,CAAC;AACnC;;;;;;;;;"}
